@@ -35,15 +35,19 @@ Gympass Style App
 # SetUp
 
 
-Subir todos os comtainers na aplicação
+Subir todos os containers na aplicação pela primeira vez
 ```bash docker
 docker compose up
 ```
-Para todos os comtainers na aplicação
+Iniciar todos os containers ja criados da aplicação
+```bash docker
+docker compose start
+```
+Para todos os containers na aplicação
 ```bash docker
 docker compose stop
 ```
-Deleta todos os comtainers na aplicação
+Deleta todos os containers na aplicação
 ```bash docker
 docker compose down
 ```
