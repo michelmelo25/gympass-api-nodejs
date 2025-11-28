@@ -30,3 +30,37 @@ Gympass Style App
 - [ ] Os dados da aplicação prescisam estar persistidos em banco PostgriSQL;
 - [ ] Todas listas de dados prescisam estar paginadas com o20 itens por página;
 - [ ] o usuário deve ser identificado po um JWT (JSON Web Token);
+
+
+# SetUp
+
+
+Subir todos os comtainers na aplicação
+```bash docker
+docker compose up
+```
+Para todos os comtainers na aplicação
+```bash docker
+docker compose stop
+```
+Deleta todos os comtainers na aplicação
+```bash docker
+docker compose down
+```
+Ver quais containers estão sendo executadas
+```bash docker
+docker ps
+```
+Ver todas os containers criadas
+```bash docker
+docker ps -a
+```
+
+Executar as migrações
+```bash prisma
+npx prisma migrate dev
+```
+
+```bash prisma
+npx prisma studio 
+```
