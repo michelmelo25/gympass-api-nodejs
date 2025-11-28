@@ -60,6 +60,10 @@ Ver todas os containers criadas
 docker ps -a
 ```
 
+Gerar o Prisma Client
+```bash prisma
+npx prisma generate
+```
 Executar as migrações
 ```bash prisma
 npx prisma migrate dev
