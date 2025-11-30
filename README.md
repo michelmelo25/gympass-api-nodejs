@@ -1,4 +1,4 @@
-# 🚀 gym-checkin-api
+# 🚀 Gympass API Node.js
 
 API RESTful para um aplicativo de check-in em academias, replicando o conceito do Gym Pass. Desenvolvida como um projeto de estudo em **Node.js** e **TypeScript**, utilizando as melhores práticas e padrões de mercado.
 
