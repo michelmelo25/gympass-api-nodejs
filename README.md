@@ -25,7 +25,8 @@ Este projeto foi construído com uma stack robusta e moderna, focada em performa
 
 ### Requisitos Funcionais (RFs)
 
-- [ ] Deve ser possível se cadastrar e se autenticar.
+- [x] Deve ser possível se cadastrar.
+- [ ] Deve ser possível se autenticar.
 - [ ] Deve ser possível obter o **perfil** do usuário logado.
 - [ ] Deve ser possível obter o **número de check-ins** realizados pelo usuário logado.
 - [ ] Deve ser possível o usuário obeter seu **histórico de check-ins**.
@@ -36,7 +37,7 @@ Este projeto foi construído com uma stack robusta e moderna, focada em performa
 
 ### Regras de Negócio (RNs)
 
-- [ ] O usuário não deve poder se cadastrar com **e-mail duplicado**.
+- [x] O usuário não deve poder se cadastrar com **e-mail duplicado**.
 - [ ] O usuário não pode fazer **2 check-ins no mesmo dia**.
 - [ ] O usuário não pode fazer check-in se não estivér **perto (100m)** da academia.
 - [ ] O check-in só pode ser **validado até 20 minutos** após criado.
@@ -45,8 +46,8 @@ Este projeto foi construído com uma stack robusta e moderna, focada em performa
 
 ### Requisitos Não-Funcionais (RNFs)
 
-- [ ] A senha do usuário precisa estar **criptografada**.
-- [ ] Os dados da aplicação precisam estar persistidos em banco **PostgreSQL**.
+- [x] A senha do usuário precisa estar **criptografada**.
+- [x] Os dados da aplicação precisam estar persistidos em banco **PostgreSQL**.
 - [ ] Todas listas de dados precisam estar **paginadas com 20 itens** por página.
 - [ ] O usuário deve ser identificado por um **JWT** (JSON Web Token).
 
