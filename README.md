@@ -33,7 +33,7 @@ Este projeto foi construído com uma stack robusta e moderna, focada em performa
 - [ ] Deve ser possível o usuário **buscar academias** próximas ou pelo nome.
 - [x] Deve ser possível o usuário realizar **check-in** em uma academia.
 - [ ] Deve ser possível **validar o check-in** do usuário (por administradores).
-- [ ] Deve ser possível **cadastrar uma academia** (por administradores).
+- [x] Deve ser possível **cadastrar uma academia** (por administradores).
 
 ### Regras de Negócio (RNs)
 
