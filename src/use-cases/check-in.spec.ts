@@ -10,22 +10,13 @@ let checkInRepository: InMemoryCheckInsRepository
 let gymsRepository: InMemoryGymsRepository
 let sut: CheckInUseCase
 
-describe('Register Use Case', () => {
+describe('Check-in Use Case', () => {
   beforeEach(async () => {
     checkInRepository = new InMemoryCheckInsRepository()
     gymsRepository = new InMemoryGymsRepository()
     sut = new CheckInUseCase(checkInRepository, gymsRepository)
 
     vi.useFakeTimers()
-
-    gymsRepository.items.push({
-      id: 'gym-01',
-      title: 'JavaScript Gym',
-      phone: '',
-      description: '',
-      latitude: new Decimal(-3.7529244),
-      longitude: new Decimal(-38.5297975),
-    })
 
     await gymsRepository.create({
       id: 'gym-01',
