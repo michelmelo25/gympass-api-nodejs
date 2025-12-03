@@ -28,8 +28,8 @@ Este projeto foi construído com uma stack robusta e moderna, focada em performa
 - [x] Deve ser possível se cadastrar.
 - [x] Deve ser possível se autenticar.
 - [x] Deve ser possível obter o **perfil** do usuário logado.
-- [ ] Deve ser possível obter o **número de check-ins** realizados pelo usuário logado.
-- [ ] Deve ser possível o usuário obeter seu **histórico de check-ins**.
+- [x] Deve ser possível obter o **número de check-ins** realizados pelo usuário logado.
+- [x] Deve ser possível o usuário obeter seu **histórico de check-ins**.
 - [ ] Deve ser possível o usuário **buscar academias** próximas ou pelo nome.
 - [x] Deve ser possível o usuário realizar **check-in** em uma academia.
 - [ ] Deve ser possível **validar o check-in** do usuário (por administradores).
