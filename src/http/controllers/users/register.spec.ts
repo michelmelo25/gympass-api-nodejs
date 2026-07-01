@@ -1,6 +1,7 @@
 import request from 'supertest'
 import { app } from '@/app'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
+import { GerarEmailAleatorio } from '@/utils/test/create-random-email'
 
 describe('Register (e2e)', () => {
   beforeAll(async () => {
@@ -14,7 +15,7 @@ describe('Register (e2e)', () => {
   it('shoul be able to register', async () => {
     const response = await request(app.server).post('/users').send({
       name: 'John Doe',
-      email: 'johndoe@exemple.com',
+      email: GerarEmailAleatorio(),
       password: '123456',
     })
 

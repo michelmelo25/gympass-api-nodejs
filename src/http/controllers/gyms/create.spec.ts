@@ -13,8 +13,8 @@ describe('Gym (e2e)', () => {
   })
 
   it('shoul be able to create a gym', async () => {
-    const token = await CreateAndAuthenticateUser(app)
-    console.log('Iniciando criacao de academia')
+    const { token } = await CreateAndAuthenticateUser(app)
+
     const response = await request(app.server)
       .post('/gyms')
       .set('Authorization', `Bearer ${token}`)
