@@ -7,7 +7,7 @@ import type { Environment } from 'vitest/environments'
 
 function generateDatabaseUrl(schema: string) {
   if (!process.env.DATABASE_URL) {
-    throw new Error('Please provider a DATABASE_URL env variable')
+    throw new Error('Please provide a DATABASE_URL env variable')
   }
 
   const url = new URL(process.env.DATABASE_URL)
@@ -20,6 +20,7 @@ function generateDatabaseUrl(schema: string) {
 export default <Environment>{
   name: 'prisma',
   viteEnvironment: 'ssr',
+
   async setup() {
     const schema = randomUUID()
     const databaseUrl = generateDatabaseUrl(schema)
