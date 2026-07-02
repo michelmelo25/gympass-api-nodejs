@@ -15,7 +15,7 @@ describe('Authenticate e2e', () => {
     const email = GerarEmailAleatorio()
     await request(app.server).post('/users').send({
       name: 'John Doe',
-      email: email.toString(),
+      email,
       password: '123456',
     })
 
