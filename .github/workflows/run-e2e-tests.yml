@@ -16,7 +16,8 @@ jobs:
                 POSTGRESQL_USERNAME: docker 
                 POSTGRESQL_PASSWORD: docker 
                 POSTGRESQL_DATABASE: apigympass 
-
+                JWT_SECRET: testing
+                DATABASE_URL: "postgresql://docker:docker@localhost:5432/api-gympass-pg?schema=public"
     steps:
         - uses: actions/checkout@v6
         - uses: actions/setup-node@v6
@@ -29,6 +30,4 @@ jobs:
         - run: npx prisma migrate dev
 
         - run: npm run test:e2e -- --fileParallelism=false
-          env:
-            JWT_SECRET: testing
-            DATABASE_URL: "postgresql://docker:docker@localhost:5432/api-gympass-pg?schema=public"
+            
