@@ -26,10 +26,11 @@ jobs:
             
         - run: npm ci
         - run: npx prisma generate
+        - run: npx prisma migrate dev
           env:
             DATABASE_URL: "postgresql://user:password@localhost:5432/test_db"
 
-        - run: npm run test:e2e
+        - run: npm run test:e2e -- --fileParallelism=false
           env:
             JWT_SECRET: testing
             DATABASE_URL: "postgresql://docker:docker@localhost:5432/api-gympass-pg?schema=public"
